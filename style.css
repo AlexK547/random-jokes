@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;  
+}
+
+/* -----Header----- */
+
+header {
+  height: 50px;
+  background-color: chocolate;    
+}
+
+.language {
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 30px;  
+  font-weight: bold;
+  line-height: 50px;
+  color: #FFFFFF;  
+}
+.lang-en {  
+  color: #BDAE82;  
+  cursor: pointer;    
+  transition: 0.5s;
+}
+.lang-en:hover {  
+  text-decoration: underline;
+}
+
+.lang-ru {
+  color: #FFFFFF; 
+  cursor: pointer;
+  transition: 0.5s;
+}
+.lang-ru:hover {  
+  text-decoration: underline;
+}
+
+
+/* -----Main----- */
+
+main {  
+  height: calc(100vh - 100px);
+  background-color: #657aac;  
+}
+.main-container {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.picture {
+  padding-bottom: 20px;   
+  height: 30%;  
+}
+.main-picture {  
+  width: 100%;
+  max-height: 40vh;
+  visibility: hidden;
+}
+.main-button {  
+  width: 300px;
+  height: 55px;
+  border: 2px solid #BDAE82;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: #BDAE82;  
+  cursor: pointer;  
+  font-size: 20px;
+  line-height: 40px;
+  background-color:darkgreen;
+  transition: 0.5s;
+}
+.main-button:hover {
+  color: #000000;
+  background-color: lightgreen;
+}
+
+.main-quote {
+  padding-top: 20px;
+  font-size: 30px;
+  line-height: 45px;
+  max-width: 700px;
+  text-align: center;
+}
+
+
+/* -----Footer----- */
+
+.footer-container {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 50px;  
+}
+.footer-github {
+  display: flex;  
+  justify-content: space-between;
+  margin-left: 20px;
+}
+.footer-github>p {
+  padding-right: 20px;  
+}
+.footer-github-link {
+  text-decoration: none;    
+  color: #FFFFFF;
+  transition: 0.5s;  
+}
+.footer-github-link:hover {
+  color: #BDAE82;
+}
+.footer-rss {
+  padding-right: 20px;
+}
+.footer-rss-logo {
+  display: block;
+  width: 100px;
+  height: 40px;
+  background-image: url('./assets/svg/rss.svg');
+  background-size: contain;
+  background-repeat: no-repeat;    
+  transition: 0.5s;
+}
+.footer-rss-logo:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+  contrast(87%);
+}
+
+@media only screen and (max-width: 450px) {
+  .picture {
+    padding-bottom: 10px;   
+    height: 20%;  
+  }
+  .main-quote {
+    padding-top: 10px;
+    font-size: 20px;
+    line-height: 25px;
+    max-width: 300px;
+    text-align: center;
+  }
+}
